@@ -1,0 +1,13 @@
+Changes Log for Recipe Project:
+
+1. Updated `src/data/recipes.js`:
+   - Implemented the `saveRecipe` function to send recipe data to the specified API endpoint with error handling.
+
+2. Modified `src/pages/SavedRecipes.jsx`:
+   - Added navigation to the recipe detail page when a recipe card is clicked, ensuring the correct recipe ID is passed.
+
+3. Updated `src/pages/RecipeDetail.jsx`:
+   - Implemented fetching of recipe details from the backend server using Axios.
+   - Added error handling for the API call.
+   - Ensured that each ingredient in the list has a unique key.
+   - Added loading and error states for better user experience.
