@@ -18,7 +18,7 @@ const RecipeDetail = () => {
         console.log('Fetched Recipe:', response.data); // Log the fetched recipe
       } catch (err) {
         console.error('Error fetching recipe:', err);
-        setError('Failed to fetch recipe details.');
+        setError('Failed to fetch recipe details. Please try again later.');
       }
     };
 
@@ -57,7 +57,8 @@ const RecipeDetail = () => {
     alert("Recipe deleted!");
   };
 
-  if (error) return <h2 className="text-center mt-5">{error}</h2>;
+    if (error) return <h2 className="text-center mt-5">{error}</h2>; // Display error message
+
   if (!recipe) return <h2 className="text-center mt-5">Loading recipe details...</h2>;
 
   return (
